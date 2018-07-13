@@ -1,0 +1,12 @@
+<table>
+  <tr>
+    <td>Nº</td>
+    <td>Nombre</td>
+    <td>Nombre</td>
+  </tr>
+  <tr *ngFor="let cliente of clientes; let i = index"><!-- last booleano de ultima fila; even booleana de pares; odd booleana de impares-->
+      <td>{{i+1}}</td>
+      <td>{{cliente.nombre}}</td>
+      <td>{{cliente.cif}}</td>
+  </tr>
+</table>
